@@ -30,11 +30,11 @@ The course focuses on the principles and practices of mobile app development, in
 
 Projects in this repository may include:
 
-Languages: C#
+- Languages: C#
 
-Frameworks/Libraries: Xamarin, .NET MAUI
+- Frameworks/Libraries: Xamarin, .NET MAUI
 
-Tools: Visual Studio
+- Tools: Visual Studio
 
 ---
 
