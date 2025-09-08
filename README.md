@@ -6,7 +6,7 @@ This repository showcases the projects I built as part of CS 492: Mobile Applica
 
 ### 📖 Overview
 
-Through this course, I explored the principles and practices of mobile app development, including:
+Through this course, I will explore the principles and practices of mobile app development, including:
 
 - Designing and building intuitive, user-friendly mobile interfaces
 
