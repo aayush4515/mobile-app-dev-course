@@ -1,36 +1,38 @@
 ## 📱 CS 492: Mobile Application Development
 
-This repository contains all projects and assignments developed as part of the Mobile Application Development course at Elmhurst University.
+This repository showcases the projects I built as part of CS 492: Mobile Application Development at Elmhurst University. The course provided hands-on experience with building cross-platform mobile applications using modern frameworks and tools.
 
 ---
 
 ### 📖 Overview
 
-The course focuses on the principles and practices of mobile app development, including:
+Through this course, I explored the principles and practices of mobile app development, including:
 
-- Designing and building user-friendly mobile interfaces
+- Designing and building intuitive, user-friendly mobile interfaces
 
 - Implementing core mobile features and APIs
 
 - Applying software engineering best practices in mobile environments
 
-- Building both individual and team-based projects
+- Developing both individual and collaborative projects
 
 ---
 
-### 📂 Repository Contents
+## 📂 Projects
 
-- Project 1: Pizza Party
+- Project 1: Pizza Party 🍕
+A mobile ordering app focused on UI/UX design and form handling.
 
-- Project 2: Performace Prognosis
+- Project 2: Performance Prognosis 📊
+An application that tracks and displays performance metrics, integrating data storage and visualization features.
+
+(More projects will be added as the course progresses.)
 
 ---
 
 ### 🛠️ Tech Stack
 
-Projects in this repository may include:
-
-- Languages: C#
+- Language: C#
 
 - Frameworks/Libraries: Xamarin, .NET MAUI
 
@@ -38,20 +40,20 @@ Projects in this repository may include:
 
 ---
 
-### 🎯 Learning Objectives
+### 🎯 Key Takeaways
 
-By the end of this course, students will be able to:
+By completing these projects, I will strengthen my ability to:
 
-- Develop cross-platform and native mobile applications
+- Build cross-platform mobile applications with Xamarin/.NET MAUI
 
-- Understand mobile UI/UX principles
+- Design clean, responsive, and accessible mobile interfaces
 
-- Work with mobile databases and APIs
+- Work with APIs and local data storage
 
-- Deploy and test mobile apps
+- Test, debug, and deploy mobile applications
 
 ---
 
-### 📜 License
+### 📜 Note
 
-This repository is intended for educational purposes as part of the CS 492 course at Elmhurst University.
+This repository is part of my academic journey in CS 492: Mobile Application Development at Elmhurst University and serves as a record of my learning and growth as a mobile developer.
