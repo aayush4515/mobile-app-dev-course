@@ -15,3 +15,43 @@ The course focuses on the principles and practices of mobile app development, in
 - Applying software engineering best practices in mobile environments
 
 - Building both individual and team-based projects
+
+---
+
+### 📂 Repository Contents
+
+- Project 1: Pizza Party
+
+- Project 2: Performace Prognosis
+
+---
+
+### 🛠️ Tech Stack
+
+Projects in this repository may include:
+
+Languages: C#
+
+Frameworks/Libraries: Xamarin, .NET MAUI
+
+Tools: Visual Studio
+
+---
+
+### 🎯 Learning Objectives
+
+By the end of this course, students will be able to:
+
+- Develop cross-platform and native mobile applications
+
+- Understand mobile UI/UX principles
+
+- Work with mobile databases and APIs
+
+- Deploy and test mobile apps
+
+---
+
+### 📜 License
+
+This repository is intended for educational purposes as part of the CS 492 course at Elmhurst University.
