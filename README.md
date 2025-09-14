@@ -20,13 +20,13 @@ Through this course, I will explore the principles and practices of mobile app d
 
 ## 📂 Projects
 
-- Project 1: Pizza Party 🍕
+- Project 1: Pizza Party 🍕 <br />
 A mobile ordering app focused on UI/UX design and form handling.
 
-- Project 2: Performance Prognosis 📊
+- Project 2: Performance Prognosis 📊 <br />
 An application that tracks and displays performance metrics, integrating data storage and visualization features.
 
-- Project 3: Skeleton Project
+- Project 3: Skeleton Project <br />
 A project created to get familiar with creating .NET MAUI App on Visual Studio, and running the Android simulator.
 
 (More projects will be added as the course progresses.)
