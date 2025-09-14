@@ -53,7 +53,6 @@ class Program
 
         }
 
-
         // assign scores
         if (truthCount >= 10 && truthCount <= 13)
         {
