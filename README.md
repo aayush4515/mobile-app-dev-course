@@ -24,7 +24,7 @@ Through this course, I will explore the principles and practices of mobile app d
 A console application developed to get familiar with C# concepts.
 
 - Project 2: Performance Prognosis 📊 <br />
-Another console application created in C# that predicts the performance of students in a class depending on responses to a questionnaire.
+A console application created in C# that predicts the performance of students in a class depending on responses to a questionnaire.
 
 - Project 3: Skeleton Project <br />
 An app created to get familiar with creating .NET MAUI project on Visual Studio, and running the Android simulator.
