@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Currency_Converter.MainPage">
+
+    <VerticalStackLayout Padding="20" Spacing="20">
+        <Image Source="currency_converter.png" HeightRequest="185" />
+
+        <Label Text="Enter amount:" FontSize="18" FontAttributes="Bold" />
+        <Entry x:Name="AmountEntry" Placeholder="e.g. 100" Keyboard="Numeric" />
+
+        <Label Text="From currency:" FontSize="18" FontAttributes="Bold" />
+        <Picker x:Name="FromCurrencyPicker" Title="Select a currency:" />
+
+        <Label Text="To Currency:" FontSize="18" FontAttributes="Bold"/>
+        <Picker x:Name="ToCurrencyPicker" Title="Select a currency:" />
+
+        <Button Text="CONVERT" Clicked="OnConvertClicked" />
+
+        <Label x:Name="ResultLabel" Text="" FontSize="20" TextColor="DarkGreen"/>
+    </VerticalStackLayout>
+     
+
+</ContentPage>
+
