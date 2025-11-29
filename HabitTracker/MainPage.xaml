@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HabitTracker.MainPage"
+             BackgroundColor="White" Title="">
+
+    <VerticalStackLayout Padding="0" Spacing="0">
+
+        <Border Stroke="Black"
+                StrokeThickness="2"
+                Padding="10"
+                BackgroundColor="Black"
+                HorizontalOptions="Fill"
+                VerticalOptions="Start"
+                Margin="0">
+
+            <StackLayout>
+                <Label Text="My Habit Tracker"
+                       HorizontalTextAlignment="Center"
+                       FontSize="28"
+                       FontAttributes="Bold"
+                       TextColor="White" />
+            </StackLayout>
+        </Border>
+
+        <VerticalStackLayout Padding="20" Spacing="20">
+            <Image Source="habit_tracker.png" HeightRequest="185"
+                   Aspect="AspectFit"
+                   HorizontalOptions="Center"/>
+            
+            <Entry x:Name="HabitEntry" Placeholder="e.g., Exercise, Drink Water, etc." Keyboard="Default"/>
+            <Button x:Name="TrackHabitButton"
+                        Text="TRACK HABIT"
+                    BackgroundColor="Black"
+                    Clicked="OnTrackHabitButtonClicked"/>
+
+            <Label x:Name="HabitLabel" Text="" FontSize="20"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"
+                   IsVisible="False"/>
+
+            <Grid x:Name="ButtonGrid" IsVisible="False" ColumnDefinitions="*, Auto, *"
+                  RowDefinitions="Auto">
+
+                <Button x:Name="ResetButton" Grid.Column="0" Text="RESET" BackgroundColor="Black"
+                        Clicked="OnResetButtonClicked"/>
+                <Image x:Name="GridImage" Grid.Column="1" Source="spacer.png" />
+                <Button x:Name="ClearButton" Grid.Column="2" Text="CLEAR" BackgroundColor="Red"
+                        Clicked="OnClearButtonClicked"/>
+
+            </Grid>
+
+            <Grid x:Name="HabitTrackingGrid" IsVisible="False">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Label Text="Sunday" FontSize="18" FontAttributes="Bold" VerticalOptions="Center" Grid.Column="0" Grid.Row="0" />
+                <Switch x:Name="SundaySwitch" IsToggled="False" HorizontalOptions="End" Grid.Column="1" Grid.Row="0" Toggled="SaveHabit"/>
+
+                <Label Text="Monday" FontSize="18" FontAttributes="Bold" VerticalOptions="Center" Grid.Column="0" Grid.Row="1" />
+                <Switch x:Name="MondaySwitch" IsToggled="False" HorizontalOptions="End" Grid.Column="1" Grid.Row="1" Toggled="SaveHabit"/>
+
+                <Label Text="Tuesday" FontSize="18" FontAttributes="Bold" VerticalOptions="Center" Grid.Column="0" Grid.Row="2" />
+                <Switch x:Name="TuesdaySwitch" IsToggled="False" HorizontalOptions="End" Grid.Column="1" Grid.Row="2" Toggled="SaveHabit"/>
+
+                <Label Text="Wednesday" FontSize="18" FontAttributes="Bold" VerticalOptions="Center" Grid.Column="0" Grid.Row="3" />
+                <Switch x:Name="WednesdaySwitch" IsToggled="False" HorizontalOptions="End" Grid.Column="1" Grid.Row="3" Toggled="SaveHabit"/>
+
+                <Label Text="Thursday" FontSize="18" FontAttributes="Bold" VerticalOptions="Center" Grid.Column="0" Grid.Row="4" />
+                <Switch x:Name="ThursdaySwitch" IsToggled="False" HorizontalOptions="End" Grid.Column="1" Grid.Row="4" Toggled="SaveHabit"/>
+
+                <Label Text="Friday" FontSize="18" FontAttributes="Bold" VerticalOptions="Center" Grid.Column="0" Grid.Row="5" />
+                <Switch x:Name="FridaySwitch" IsToggled="False" HorizontalOptions="End" Grid.Column="1" Grid.Row="5" Toggled="SaveHabit"/>
+
+                <Label Text="Saturday" FontSize="18" FontAttributes="Bold" VerticalOptions="Center" Grid.Column="0" Grid.Row="6" />
+                <Switch x:Name="SaturdaySwitch" IsToggled="False" HorizontalOptions="End" Grid.Column="1" Grid.Row="6" Toggled="SaveHabit"/>
+
+            </Grid>
+
+        </VerticalStackLayout>
+
+    </VerticalStackLayout>
+
+</ContentPage>
+
