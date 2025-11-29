@@ -29,6 +29,9 @@ A console application created in C# that predicts the performance of students in
 - Project 3: Skeleton Project <br />
 An app created to get familiar with creating .NET MAUI project on Visual Studio, and running the Android simulator.
 
+- Project 4: Currency Converter <br />
+An app created to convert one currency from another. Uses basic XAML and C# implementation for learning.
+
 (More projects will be added as the course progresses.)
 
 ---
