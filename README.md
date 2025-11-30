@@ -32,6 +32,9 @@ An app created to get familiar with creating .NET MAUI project on Visual Studio,
 - Project 4: Currency Converter <br />
 An app created to convert one currency from another. Uses basic XAML and C# implementation for learning.
 
+- Project 5: Habit Tracker <br />
+A simple Habit Tracker App made using .NET MAUI, XAML and C#. Concepts learned: Preferences, Switches, Classes, JsonSerializer, Grid. Row and Column Definitions
+
 (More projects will be added as the course progresses.)
 
 ---
