@@ -35,6 +35,9 @@ An app created to convert one currency from another. Uses basic XAML and C# impl
 - Project 5: Habit Tracker <br />
 A simple Habit Tracker App made using .NET MAUI, XAML and C#. Concepts learned: Preferences, Switches, Classes, JsonSerializer, Grid. Row and Column Definitions
 
+- Project 6: Grocery To-Do List <br />
+A simple To-Do list app that allows user to add and delete grocery items visually.
+
 (More projects will be added as the course progresses.)
 
 ---
