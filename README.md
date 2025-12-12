@@ -38,6 +38,9 @@ A simple Habit Tracker App made using .NET MAUI, XAML and C#. Concepts learned: 
 - Project 6: Grocery To-Do List <br />
 A simple To-Do list app that allows user to add and delete grocery items visually.
 
+- Project 7: Water Tracker App
+A minimalistic app to track the number of glasses of water drank in a day.
+
 (More projects will be added as the course progresses.)
 
 ---
