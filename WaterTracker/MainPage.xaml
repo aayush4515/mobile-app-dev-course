@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WaterTracker.MainPage"
+             BackgroundColor="White" Title="">
+
+
+    <VerticalStackLayout Padding="0" Spacing="0">
+
+        <Border Stroke="Purple"
+                BackgroundColor="Purple"
+                Padding="10"
+                HorizontalOptions="Fill"
+                VerticalOptions="Start"
+                Margin="0"
+        >
+            <StackLayout>
+                <Label Text="Water Intake Tracker" HorizontalOptions="Center" FontSize="28" FontAttributes="Bold" TextColor="White" />
+            </StackLayout>
+        </Border>
+
+        <VerticalStackLayout Padding="20" Spacing="20" HorizontalOptions="Center">
+            <Grid x:Name="GlassContainer" RowSpacing="10" ColumnSpacing="10" HorizontalOptions="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="150" />
+                    <RowDefinition Height="150" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="75" />
+                    <ColumnDefinition Width="75" />
+                    <ColumnDefinition Width="75" />
+                    <ColumnDefinition Width="75" />
+                </Grid.ColumnDefinitions>
+
+                <!-- 8 borders to Represent the Glasses-->
+                <Border x:Name="Glass1" Grid.Row="0" Grid.Column="0" Stroke="Black" BackgroundColor="White" />
+                <Border x:Name="Glass2" Grid.Row="0" Grid.Column="1" Stroke="Black" BackgroundColor="White" />
+                <Border x:Name="Glass3" Grid.Row="0" Grid.Column="2" Stroke="Black" BackgroundColor="White" />
+                <Border x:Name="Glass4" Grid.Row="0" Grid.Column="3" Stroke="Black" BackgroundColor="White" />
+                <Border x:Name="Glass5" Grid.Row="1" Grid.Column="0" Stroke="Black" BackgroundColor="White" />
+                <Border x:Name="Glass6" Grid.Row="2" Grid.Column="1" Stroke="Black" BackgroundColor="White" />
+                <Border x:Name="Glass7" Grid.Row="3" Grid.Column="2" Stroke="Black" BackgroundColor="White" />
+                <Border x:Name="Glass8" Grid.Row="4" Grid.Column="3" Stroke="Black" BackgroundColor="White" />
+
+            </Grid>
+
+            <Button Text="I Drank a Glass of Water" BackgroundColor="Purple" TextColor="White" Clicked="OnAddWaterClicked"/>
+            <Button Text="Reset" BackgroundColor="LightGrey" Clicked="OnResetClicked"/>
+
+            <Label x:Name="StatusLabel" Text="You've had 0 glass today." FontSize="16" HorizontalOptions="Center" />
+
+        </VerticalStackLayout>
+
+
+
+
+    </VerticalStackLayout>
+
+
+
+
+
+</ContentPage>
+
