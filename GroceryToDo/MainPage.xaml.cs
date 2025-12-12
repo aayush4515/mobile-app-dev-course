@@ -13,9 +13,9 @@ public partial class MainPage : ContentPage
         if (Preferences.ContainsKey("grocery_list"))
         {
             items = LoadItems();
-            ItemCollectionView.ItemsSource = items;
         }
-	}
+        ItemCollectionView.ItemsSource = items;
+    }
 
     private static ObservableCollection<Item> LoadItems()
     {
