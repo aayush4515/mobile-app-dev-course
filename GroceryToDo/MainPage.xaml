@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GroceryToDo.MainPage"
+             BackgroundColor="White" Title="">
+
+    <VerticalStackLayout Padding="0" Spacing="0">
+        <Border Stroke="White"
+                BackgroundColor="White"
+                HorizontalOptions="Fill"
+                VerticalOptions="Start"
+                Padding="10"
+                Margin="0">
+
+            <StackLayout>
+                <Label Text="Grocery To Do List"
+                       HorizontalTextAlignment="Center"
+                       FontSize="28"
+                       FontAttributes="Bold"
+                       TextColor="Black"/>
+            </StackLayout>
+        </Border>
+
+        <VerticalStackLayout Padding="20" Spacing="20">
+            <Image Source="grocery.png" HeightRequest="185" Aspect="AspectFit" HorizontalOptions="Center" />
+            <Entry x:Name="ItemEntry" Placeholder="e.g., Milk, Cheese, Bread, Eggs, etc." Keyboard="Default"/>
+            <Button Text="Add to List" HorizontalOptions="Fill" Clicked="OnAddToListClicked"/>
+
+            <!-- List of Items -->
+            <CollectionView x:Name="ItemCollectionView" SelectionMode="None" >
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid ColumnDefinitions="*, Auto, Auto, Auto" RowDefinitions="Auto">
+                            <Label Text="{Binding name}" TextColor="Black" VerticalOptions="Center" FontSize="16" FontAttributes="Bold" Grid.Column="0"/>
+                            <Switch IsToggled="{Binding IsGotten}" HorizontalOptions="End" Grid.Column="1" Toggled="OnItemStatusChanged"/>
+                            <Image Source="spacer.png" Grid.Column="2" HorizontalOptions="End"/>
+                            <Image Source="delete.png" Grid.Column="3" HorizontalOptions="End">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="OnDeleteTapped" Command="{Binding .}" />
+                                </Image.GestureRecognizers>
+                            </Image>
+                        </Grid>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+
+    </VerticalStackLayout>
+
+    
+
+</ContentPage>
+

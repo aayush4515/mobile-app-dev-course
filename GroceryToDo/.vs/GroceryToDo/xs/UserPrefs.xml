@@ -1,0 +1,32 @@
+﻿<Properties StartupConfiguration="{955EE678-0881-4003-9415-2EA7630FBAB6}|Default">
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="Android.pixel_5_-_api_33" />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="35.0.101" />
+  <MonoDevelop.Ide.ItemProperties.GroceryToDo PreferredExecutionTarget="Android.pixel_5_-_api_33" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MainPage.xaml">
+    <Files>
+      <File FileName="MainPage.xaml.cs" Line="14" Column="33" />
+      <File FileName="MainPage.xaml" Line="25" Column="35" />
+      <File FileName="MauiProgram.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="GroceryToDo" expanded="True">
+            <Node name="GroceryToDo">
+              <Node name="Resources">
+                <Node name="Images" selected="True" />
+                <Node name="Raw" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+</Properties>
