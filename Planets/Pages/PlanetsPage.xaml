@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Planets.Pages.PlanetsPage"
+             Title=""
+             BackgroundColor="White">
+
+
+    <ScrollView>
+
+        <VerticalStackLayout Padding="0" Spacing="0" Margin="0">
+
+
+            <Border BackgroundColor="#020f1f"
+                    Stroke="#020f1f"
+                    Padding="10"
+                    Margin="0"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Start"
+                    >
+                <StackLayout Padding="10" Spacing="10">
+                    <Label Text="Let's Explore" TextColor="White" FontSize="32" FontAttributes="Bold"/>
+                    <Label Text="The milky way galaxy" TextColor="White" FontSize="24"/>
+                </StackLayout>
+            </Border>
+
+            <VerticalStackLayout Padding="20" Spacing="20">
+
+                <Label Text="Our solar system has eight planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune. There are five officially recognized dwarf planets in our solar system: Ceres, Pluto, Haumea, Makemake, and Eris." FontSize="20" LineBreakMode="WordWrap" />
+
+                <Label Text="Inner Planets" FontSize="18" FontAttributes="Bold"/>
+                <Label Text="The first four planets from the Sun are Mercury, Venus, Earth, and Mars. These inner planets also are known as terrestrial planets because they have solid surfaces." FontSize="18"
+                       LineBreakMode="WordWrap" />
+
+                <Label Text="Outer Planets" FontSize="18" FontAttributes="Bold"/>
+                <Label Text="The giant planets in the outer solar system don't have hard surfaces. Instead, they have swirling gases above a core. Jupiter and Saturn are gas giants. Uranus and Neptune are ice giants."
+                       FontSize="18" LineBreakMode="WordWrap" />
+
+                <Label Text="Dwarf Planets" FontSize="18" FontAttributes="Bold"/>
+                <Label Text="Dwarf planets include longtime favorite Pluto, Ceres, Makemake, Haumea, and Eris. Ceres is the only dwarf planet in the inner solar system. It's in the main asteroid belt between Mars and Jupiter."
+                       FontSize="18" LineBreakMode="WordWrap" />
+
+
+
+            </VerticalStackLayout>
+
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+
+
+</ContentPage>

@@ -1,0 +1,104 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net6.0-android;net6.0-ios;net6.0-maccatalyst</TargetFrameworks>
+		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net6.0-windows10.0.19041.0</TargetFrameworks>
+		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
+		<!-- <TargetFrameworks>$(TargetFrameworks);net6.0-tizen</TargetFrameworks> -->
+		<OutputType>Exe</OutputType>
+		<RootNamespace>Planets</RootNamespace>
+		<UseMaui>true</UseMaui>
+		<SingleProject>true</SingleProject>
+		<ImplicitUsings>enable</ImplicitUsings>
+
+		<!-- Display name -->
+		<ApplicationTitle>Planets</ApplicationTitle>
+
+		<!-- App Identifier -->
+		<ApplicationId>com.companyname.planets</ApplicationId>
+		<ApplicationIdGuid>4945c867-9cde-4e92-be1a-d5b5f22feee9</ApplicationIdGuid>
+
+		<!-- Versions -->
+		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+		<ApplicationVersion>1</ApplicationVersion>
+
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">14.2</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">14.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
+		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0-ios|AnyCPU'">
+	  <CreatePackage>false</CreatePackage>
+	</PropertyGroup>
+	<ItemGroup>
+		<!-- App Icon -->
+		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
+
+		<!-- Splash Screen -->
+		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
+
+		<!-- Images -->
+		<MauiImage Include="Resources\Images\*" />
+		<MauiImage Update="Resources\Images\dotnet_bot.svg" BaseSize="168,208" />
+
+		<!-- Custom Fonts -->
+		<MauiFont Include="Resources\Fonts\*" />
+
+		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
+		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Resources\Images\ceres.png" />
+	  <None Remove="Resources\Images\earth.png" />
+	  <None Remove="Resources\Images\eris.png" />
+	  <None Remove="Resources\Images\haumea.png" />
+	  <None Remove="Resources\Images\jupiter.png" />
+	  <None Remove="Resources\Images\makemake.png" />
+	  <None Remove="Resources\Images\mars.png" />
+	  <None Remove="Resources\Images\mercury.png" />
+	  <None Remove="Resources\Images\neptune.png" />
+	  <None Remove="Resources\Images\planets.png" />
+	  <None Remove="Resources\Images\pluto.png" />
+	  <None Remove="Resources\Images\saturn.png" />
+	  <None Remove="Resources\Images\uranus.png" />
+	  <None Remove="Resources\Images\venus.png" />
+	  <None Remove="Resources\Images\dwarf_planets_icon.png" />
+	  <None Remove="Resources\Images\home_icon.png" />
+	  <None Remove="Resources\Images\inner_planets_icon.png" />
+	  <None Remove="Resources\Images\outer_planets_icon.png" />
+	  <None Remove="Pages\" />
+	  <None Remove="Pages\Inner\" />
+	  <None Remove="Pages\Outer\" />
+	  <None Remove="Pages\Dwarf\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <BundleResource Include="Resources\Images\ceres.png" />
+	  <BundleResource Include="Resources\Images\earth.png" />
+	  <BundleResource Include="Resources\Images\eris.png" />
+	  <BundleResource Include="Resources\Images\haumea.png" />
+	  <BundleResource Include="Resources\Images\jupiter.png" />
+	  <BundleResource Include="Resources\Images\makemake.png" />
+	  <BundleResource Include="Resources\Images\mars.png" />
+	  <BundleResource Include="Resources\Images\mercury.png" />
+	  <BundleResource Include="Resources\Images\neptune.png" />
+	  <BundleResource Include="Resources\Images\planets.png" />
+	  <BundleResource Include="Resources\Images\pluto.png" />
+	  <BundleResource Include="Resources\Images\saturn.png" />
+	  <BundleResource Include="Resources\Images\uranus.png" />
+	  <BundleResource Include="Resources\Images\venus.png" />
+	  <BundleResource Include="Resources\Images\dwarf_planets_icon.png" />
+	  <BundleResource Include="Resources\Images\home_icon.png" />
+	  <BundleResource Include="Resources\Images\inner_planets_icon.png" />
+	  <BundleResource Include="Resources\Images\outer_planets_icon.png" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Pages\" />
+	  <Folder Include="Pages\Inner\" />
+	  <Folder Include="Pages\Outer\" />
+	  <Folder Include="Pages\Dwarf\" />
+	</ItemGroup>
+</Project>

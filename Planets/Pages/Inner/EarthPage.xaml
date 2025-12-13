@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Planets.Pages.Inner.EarthPage"
+             Title="Earth Facts">
+    <VerticalStackLayout Padding="20" Spacing="20">
+        <Image Source="earth.png" Aspect="AspectFit" HorizontalOptions="Center" />
+
+        <Label 
+            Text="Earth – our home planet – is the third planet from the Sun, and the fifth largest planet."
+            LineBreakMode="WordWrap"
+            FontSize="18"/>
+
+    </VerticalStackLayout>
+</ContentPage>

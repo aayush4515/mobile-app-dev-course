@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Planets.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Planets"
+    Shell.FlyoutBehavior="Disabled"
+    Title="Maui Planets">
+
+
+    <TabBar>
+
+        <ShellContent
+        Title="Home" Icon="home_icon.png"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+
+        <ShellContent
+        Title="Inner Planets" Icon="inner_planets_icon.png"
+        ContentTemplate="{DataTemplate local:Pages.Inner.PlanetsPage}"
+        Route="InnerPlanetsPage" />
+
+        <ShellContent
+        Title="Outer Planets" Icon="outer_planets_icon.png"
+        ContentTemplate="{DataTemplate local:Pages.Outer.PlanetsPage}"
+        Route="OuterPlanetsPage" />
+
+        <ShellContent
+        Title="Dwarf Planets" Icon="dwarf_planets_icon.png"
+        ContentTemplate="{DataTemplate local:Pages.Dwarf.PlanetsPage}"
+        Route="DwarfPlanetsPage" />
+
+
+    </TabBar>
+
+</Shell>
+

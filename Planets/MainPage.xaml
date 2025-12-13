@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Planets.MainPage"
+             BackgroundColor="#020f1f"
+             Title="">
+
+    <VerticalStackLayout Padding="0" Spacing="0" Margin="0">
+
+        <StackLayout Padding="10" Spacing="10" VerticalOptions="Start">
+
+            <Image Source="planets.png" Aspect="AspectFit" HorizontalOptions="Center" />
+
+        </StackLayout>
+
+        <StackLayout VerticalOptions="End">
+
+            <Border BackgroundColor="White"
+                    Stroke="White"
+                    HorizontalOptions="Fill"
+                    Padding="20"
+                    Margin="20"
+            >
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="24" />
+                </Border.StrokeShape>
+
+                <VerticalStackLayout Padding="10" Spacing="10">
+                    <Label HorizontalTextAlignment="Center"
+                           FontSize="28"
+                           FontAttributes="Bold"
+                           Text="Hello, World!"/>
+
+                    <Label HorizontalTextAlignment="Center"
+                           FontSize="18"
+                           Text="Want to know and explain all things about the planets in the Milky Way galaxy?"
+                           LineBreakMode="WordWrap"/>
+                    
+
+                    <Button Text="Explore Now"
+                            HorizontalOptions="Fill"
+                            Clicked="OnExploreNowClicked"/>
+                </VerticalStackLayout>
+
+            </Border>
+
+        </StackLayout>
+
+    </VerticalStackLayout>
+
+</ContentPage>
+
