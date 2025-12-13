@@ -44,6 +44,9 @@ A minimalistic app to track the number of glasses of water drank in a day.
 - Project 8: Planets <br />
 A multi-page app that provides information about different planets in the solar system. Concepts Learned: Multipages, Routing, AppShell.xaml, TabBar, etc.
 
+- Project 9: MoonShot <br />
+A multipage app that enables users to learn abou NASA's Artemis Missions.
+
 (More projects will be added as the course progresses.)
 
 ---
