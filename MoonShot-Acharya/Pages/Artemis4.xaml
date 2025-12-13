@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MoonShot_Acharya.Pages.Artemis4"
+             Title="Artemis IV">
+
+    <ScrollView>
+
+        <VerticalStackLayout Padding="20" Spacing="20">
+        <Image Source="artemis.png" Aspect="AspectFit" HorizontalOptions="Center" />
+
+        <Label 
+            Text="Artemis IV debuts humanity's first lunar space station, a larger, more powerful version of the SLS rocket, and new mobile launcher."
+            LineBreakMode="WordWrap"
+            FontSize="18"/>
+
+        <Label
+            Text="NASA and its partners are developing the foundational systems needed for long-term exploration at the Moon for the benefit of all with NASA’s Artemis campaign. Following the Artemis III mission that will land the first people near the Moon’s South Pole, astronauts on Artemis IV will live and work in humanity’s first lunar space station, Gateway, which will enable new opportunities for science and preparation for human missions to Mars. The mission will bring together an intricate choreography of multiple launches and spacecraft dockings in lunar orbit, and will feature the debut of NASA’s larger, more powerful version of its SLS (Space Launch System) rocket and new mobile launcher."
+            LineBreakMode="WordWrap"
+            FontSize="18" />
+
+    </VerticalStackLayout>
+
+    </ScrollView>
+
+
+</ContentPage>

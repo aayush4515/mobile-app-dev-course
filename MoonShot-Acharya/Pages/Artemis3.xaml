@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MoonShot_Acharya.Pages.Artemis3"
+             Title="Artemis III">
+    <ScrollView>
+
+        <VerticalStackLayout Padding="20" Spacing="20">
+        <Image Source="artemis.png" Aspect="AspectFit" HorizontalOptions="Center" />
+
+        <Label 
+            Text="Artemis III will be one of the most complex undertakings of engineering and human ingenuity in the history of deep space exploration, exploring the lunar South Pole region. The astronauts’ observations, samples, and data collected will expand our understanding of our solar system and home planet, while inspiring the Artemis Generation."
+            LineBreakMode="WordWrap"
+            FontSize="18"/>
+
+        <Label
+            Text="Over the course of about 30 days, the Artemis III astronauts will travel to lunar orbit, where two crew members will descend to the surface and spend approximately a week near the South Pole of the Moon conducting new science before returning to lunar orbit to join their crew for the journey back to Earth."
+            LineBreakMode="WordWrap"
+            FontSize="18"
+             />
+
+    </VerticalStackLayout>
+
+    </ScrollView>
+    
+</ContentPage>

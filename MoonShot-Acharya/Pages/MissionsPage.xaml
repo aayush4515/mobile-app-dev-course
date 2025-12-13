@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MoonShot_Acharya.Pages.MissionsPage"
+             Title="Artemis Missions"
+             BackgroundColor="White">
+    <VerticalStackLayout Padding="20" Spacing="20">
+        <Label Text="The Artemis program is a Moon exploration program led by the United States' National Aeronautics and Space Administration (NASA), formally established in 2017 via Space Policy Directive 1. The program is intended to reestablish a human presence on the Moon for the first time since the Apollo 17 mission in 1972, with a stated long-term goal of establishing a permanent base on the Moon. This will facilitate human missions to Mars." FontSize="18"
+                LineBreakMode="WordWrap" />
+
+        <Button Text="Artemis I" HorizontalOptions="Fill" Clicked="OnArtemisClicked" CommandParameter="Artemis1" />
+        <Button Text="Artemis II" HorizontalOptions="Fill" Clicked="OnArtemisClicked" CommandParameter="Artemis2" />
+        <Button Text="Artemis III" HorizontalOptions="Fill" Clicked="OnArtemisClicked" CommandParameter="Artemis3" />
+        <Button Text="Artemis IV" HorizontalOptions="Fill" Clicked="OnArtemisClicked" CommandParameter="Artemis4" />
+
+    </VerticalStackLayout>
+</ContentPage>

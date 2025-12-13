@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MoonShot_Acharya.MainPage"
+             Title=""
+             BackgroundColor="White">
+
+    <VerticalStackLayout Padding="0" Spacing="0" Margin="0">
+
+        <StackLayout Padding="10" Spacing="10" VerticalOptions="Start">
+
+            <Image Source="artemis.png" Aspect="AspectFit" HorizontalOptions="Center" />
+
+        </StackLayout>
+
+        <StackLayout VerticalOptions="End">
+
+            <Border BackgroundColor="White"
+                    Stroke="White"
+                    HorizontalOptions="Fill"
+                    Padding="20"
+                    Margin="20"
+            >
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="24" />
+                </Border.StrokeShape>
+
+                <VerticalStackLayout Padding="10" Spacing="10">
+                    <Label HorizontalTextAlignment="Center"
+                           FontSize="28"
+                           FontAttributes="Bold"
+                           Text="Hello, Moon!"/>
+
+                    <Label HorizontalTextAlignment="Center"
+                           FontSize="18"
+                           Text="Want to explore NASA's Artemis Missions? Navigate to the Artemis Missions tab below 👇"
+                           LineBreakMode="WordWrap"/>
+                
+                </VerticalStackLayout>
+
+            </Border>
+
+        </StackLayout>
+
+    </VerticalStackLayout>
+
+</ContentPage>
+

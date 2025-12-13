@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MoonShot_Acharya.Pages.Artemis1"
+             Title="Artemis I">
+    <VerticalStackLayout Padding="20" Spacing="20">
+        <Image Source="artemis.png" Aspect="AspectFit" HorizontalOptions="Center" />
+
+        <Label 
+            Text="Artemis I was the first in a series of increasingly complex missions that will enable human exploration at the Moon and future missions to Mars."
+            LineBreakMode="WordWrap"
+            FontSize="18"/>
+
+    </VerticalStackLayout>
+</ContentPage>
