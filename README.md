@@ -41,6 +41,9 @@ A simple To-Do list app that allows user to add and delete grocery items visuall
 - Project 7: Water Tracker App
 A minimalistic app to track the number of glasses of water drank in a day.
 
+- Project 8: Planets
+A multi-page app that provides information about different planets in the solar system. Concepts Learned: Multipages, Routing, AppShell.xaml, TabBar, etc.
+
 (More projects will be added as the course progresses.)
 
 ---
