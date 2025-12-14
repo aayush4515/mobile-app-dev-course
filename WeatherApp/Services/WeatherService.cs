@@ -5,7 +5,8 @@ namespace WeatherApp.Services
 {
 	public class WeatherService
 	{
-		private const string ApiKey = "f1706095baa0926b171fe022a88a6b3a";
+		// USE THE CORRECT KEY LATER
+		private const string ApiKey = "xyz";
 		private const string BaseUrl = "https://api.openweathermap.org/data/2.5/weather?";
 
 		private readonly HttpClient _httpClient;
