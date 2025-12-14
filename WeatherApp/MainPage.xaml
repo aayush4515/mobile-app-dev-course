@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WeatherApp.MainPage"
+             Title=""
+             BackgroundColor="White">
+
+    <ScrollView>
+
+        <VerticalStackLayout Padding="0" Spacing="0">
+
+            <Border Stroke="Navy"
+                    StrokeThickness="1"
+                    BackgroundColor="Navy"
+                    HorizontalOptions="Fill"
+                    VerticalOptions="Start"
+                    Padding="10"
+                    Margin="0">
+
+                <Label Text="Weather Forecast" HorizontalOptions="Center"
+                       FontSize="20" FontAttributes="Bold" TextColor="White" />
+            </Border>
+
+
+            <VerticalStackLayout Padding="20" Spacing="20">
+
+                <Entry x:Name="ZipCodeEntry" Placeholder="Enter Zip Code" Keyboard="Numeric" />
+                <Button Text="Get Weather" BackgroundColor="Navy" TextColor="White" Clicked="OnGetWeatherClicked" />
+                <Label x:Name="WeatherInfoLabel"
+                       Text="Weather forecast will appear here"
+                       HorizontalOptions="Center"
+                       VerticalOptions="Center"
+                       FontSize="18"/>
+
+            </VerticalStackLayout>
+
+        </VerticalStackLayout>
+
+    </ScrollView>
+    
+
+</ContentPage>
+

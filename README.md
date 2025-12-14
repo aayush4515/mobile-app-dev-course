@@ -47,6 +47,12 @@ A multi-page app that provides information about different planets in the solar 
 - Project 9: MoonShot <br />
 A multipage app that enables users to learn abou NASA's Artemis Missions.
 
+- Project 10: Cars <br />
+A cars listing app made using the MVVP Pattern.
+
+- Project 11: Weather App <br />
+An app that gives the current weather details of a particular location based on Zip Code. Concepts learned: APIs, Web Services, JSON.
+
 (More projects will be added as the course progresses.)
 
 ---
