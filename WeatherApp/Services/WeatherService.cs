@@ -19,9 +19,7 @@ namespace WeatherApp.Services
 		// makes the API call and retrieves the weather data
 		public async Task<WeatherResponse> GetWeatherByZipCode(string ZipCode)
 		{
-			//var url = $"{BaseUrl}zip={ZipCode},us&appid={ApiKey}&units=imperial";
-			var url = "https://api.openweathermap.org/data/2.5/weather?zip=60126,us&appid=f1706095baa0926b171fe022a88a6b3a&units=imperial";
-
+			var url = $"{BaseUrl}zip={ZipCode},us&appid={ApiKey}&units=imperial";
             var response = await _httpClient.GetStringAsync(url);
 
 			return JsonConvert.DeserializeObject<WeatherResponse>(response);

@@ -1,26 +1,30 @@
 ﻿<Properties StartupConfiguration="{506DB9A3-3C82-489A-9AC8-B2E10B729884}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Pages/Inner/EarthPage.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Pages/PlanetsPage.xaml">
     <Files>
-      <File FileName="MainPage.xaml.cs" />
-      <File FileName="MainPage.xaml" Line="1" Column="1" />
-      <File FileName="Pages/PlanetsPage.xaml" Line="1" Column="1" />
-      <File FileName="Pages/Dwarf/PlanetsPage.xaml" Line="1" Column="1" />
-      <File FileName="Pages/Inner/PlanetsPage.xaml" Line="1" Column="1" />
-      <File FileName="Pages/Outer/PlanetsPage.xaml" Line="1" Column="1" />
-      <File FileName="Pages/Inner/EarthPage.xaml" Line="13" Column="1" />
+      <File FileName="Pages/PlanetsPage.xaml" Line="17" Column="27" />
+      <File FileName="Pages/PlanetsPage.xaml.cs" />
+      <File FileName="Pages/Inner/EarthPage.xaml" />
+      <File FileName="Pages/Inner/PlanetsPage.xaml" />
+      <File FileName="AppShell.xaml.cs" />
+      <File FileName="AppShell.xaml" />
+      <File FileName="MainPage.xaml" />
+      <File FileName="Pages/Inner/MercuryPage.xaml" />
+      <File FileName="Pages/Inner/VenusPage.xaml" />
+      <File FileName="Pages/Inner/MarsPage.xaml" />
+      <File FileName="App.xaml" />
+      <File FileName="Pages/Outer/PlanetsPage.xaml" />
+      <File FileName="Pages/Dwarf/PlanetsPage.xaml" />
+      <File FileName="Pages/Inner/PlanetsPage.xaml.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Planets" expanded="True">
+          <Node name="Planets">
             <Node name="Planets">
-              <Node name="Pages">
-                <Node name="Inner">
-                  <Node name="EarthPage.xaml" selected="True" />
-                </Node>
+              <Node name="Pages" expanded="True">
+                <Node name="PlanetsPage.xaml" selected="True" />
               </Node>
-              <Node name="Resources" expanded="True" />
-              <Node name="MainPage.xaml" expanded="True" />
+              <Node name="AppShell.xaml" expanded="True" />
             </Node>
           </Node>
         </State>

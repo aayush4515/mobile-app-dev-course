@@ -53,6 +53,9 @@ A cars listing app made using the MVVP Pattern.
 - Project 11: Weather App <br />
 An app that gives the current weather details of a particular location based on Zip Code. Concepts learned: APIs, Web Services, JSON.
 
+- Project 12: High Protein <br />
+An Recipe Book App that lists different recipes for Breakfast, Lunch, Dinner and Snacks. Concepts learned: Web Services, Models, WordPress, CarouselView, Async Functions.
+
 (More projects will be added as the course progresses.)
 
 ---
